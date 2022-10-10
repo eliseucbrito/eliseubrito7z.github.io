@@ -1,0 +1,208 @@
+:root {
+    /* THEME DESIGN */
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+
+    /* LIGHT THEME */
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+
+    /* DARK THEME */
+    --body-bg-color-dark: #292C35;
+    --purple: #6C5DD3;
+    --light-purple: #8B7EE4;
+    --text-color-dark: #F6F6F6;
+    --text-title-dark: #A7A1CD;
+
+    /* ANIMATIONS */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--background);
+    min-width: 50vw;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+}
+
+section {
+    width: 50vw;
+    height: 100vh;
+}
+
+.container__header {
+    margin: 20px;
+    position: absolute;
+}
+
+.container__section {
+    display: grid;
+    place-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.container__login{
+    width: 600px;
+    height: 520px;
+    background-color: var(--form-background);
+    padding: 60px 120px;
+}
+
+.container__login__title{
+    display: flex;
+    color: var(--text-title-dark);
+    font-family: 'Poppins';
+    font-weight: 600;
+    gap: 10px;
+}
+
+.container__login__subtitle{
+    color: var(--text-base);
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.container__form{
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container__form__label{
+    color: var(--text-base);
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.container__form__recover{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+/* EMAIL INPUT */
+
+.container__form__input{
+    width: 100%;
+    height: 40px;
+    outline: #6C5DD3;
+    background-color: transparent;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    color: var(--text-base);
+}
+
+.input__email{
+    background-image: url(../images/mail.svg);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 35px;
+}
+
+.input__email:focus{
+    border: 2px solid #6C5DD3;
+    background-image: url(../images/mail-focus.svg);
+}
+
+.input__password{
+    background-image: url(../images/lock.svg);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 35px;
+}
+
+.input__password:focus{
+    border: 2px solid #6C5DD3;
+    background-image: url(../images/lock-focus.svg);
+}
+
+
+/* EMAIL INPUT */
+
+/* PASSWORD INPUT */
+
+
+
+/* PASSWORD INPUT */
+
+/* .container__form__input:focus{
+    box-shadow: 0px 0px 0px 2px #6C5DD3;
+    border: 1px solid #6C5DD3;
+} */
+
+.input__email{
+    display: flex;
+}
+
+.container__form__options, .remember{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box__checkbox{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.remember .checked{
+    background-image: url(../images/check.svg);
+}
+
+.container__remeber__text{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: var(--text-base);
+    background-color: transparent;
+    display: block;
+}
+
+.container__form__recover{
+    color: #6C5DD3;
+}
+
+.container__login__button{
+    width: 100%;
+    height: 50px;
+    background: var(--purple);
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+}
+
+.container__cover{
+    background-color: #6C5DD3;
+    background-image: url(../images/cover.svg);
+    background-size: 35vw;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: 100px;
+}
